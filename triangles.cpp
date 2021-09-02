@@ -1,5 +1,5 @@
 /* Program name: triangles.cpp
-*  Author: Pratham Vadhulas
+*  Author: ...
 *  Date last updated: 09/01/2021
 * Purpose: Calculates whether or not the sides form a triagle, and if so
            it outputs whether or not the triangle is a right triangle.
@@ -53,7 +53,6 @@ int main(){
             cout << endl<< "triangle = True" << endl <<
             "but your lengths don't form a RIGHT triangle" << endl;
         }
-
     }
     else {
         cout << endl<< "triangle = False" << endl <<
