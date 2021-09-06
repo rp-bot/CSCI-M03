@@ -14,7 +14,6 @@ int main(){
     float longest = 0.0; //hypotenuse
     float small_1, small_2; //other 2 smaller sides
 
-
     //input format
     cout<< "type the length of the 1st side: ";
     cin >>s1; //input goes into s1
