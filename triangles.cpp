@@ -1,6 +1,6 @@
 /* Program name: triangles.cpp
-*  Author: ...
-*  Date last updated: 09/01/2021
+*  Author: 
+*  Date last updated: 09/08/2021
 * Purpose: Calculates whether or not the sides form a triagle, and if so
            it outputs whether or not the triangle is a right triangle.
 */
@@ -34,8 +34,7 @@ int main(){
     // if not, the else statement below will execute.
     //          || stands for 'or'
     if (s1 == 0 || s2 == 0 || s3 == 0){
-        cout << "triangle = False" << endl <<
-        "your lengths don't form a triangle" << endl; // not a triangle
+        cout << "triangle = False" << endl; // not a triangle
     }
     // when the else statement executes it checks if it forms a triangle
     // the test for that is the sum of 2 sides must be greater than the 3rd
@@ -43,8 +42,6 @@ int main(){
     // if it passes the following executes
     // if it doesn't, the else statement on the very bottom will execute
     else if (s1 + s2 > s3 && s2 + s3 > s1 && s3 + s1 > s2){
-        cout<< "your inputs forms a triangle" << endl;
-
         // everything here is within the above 'else if' statement
 
         // the next 3 if statements are seeing which one is longest side
@@ -74,19 +71,18 @@ int main(){
         // and(&&), pythagoreon theorem is true.
         // if this passes we have a RIGHT triangle
         if (longest != 0 && pow(small_1,2)+pow(small_2,2)==pow(longest,2)){
-            cout << endl<< "triangle = True" << endl <<
-            "and your lengths form a RIGHT triangle" << endl; //output
+            cout << endl<< "      triangle = True" << endl <<
+            "RIGHT triangle = True" << endl; //output
 
         // if the above statement doesn't pass then this will execute.
         } else{
-            cout << endl<< "triangle = True" << endl <<
-            "but your lengths don't form a RIGHT triangle" << endl; //output
+            cout << endl<< "      triangle = True" << endl <<
+            "RIGHT triangle = False" << endl; //output
         }
     }
 
     // this executes only if it doesn't pass the initial triangle test.
     else {
-        cout << endl<< "triangle = False" << endl <<
-        "your lengths don't form a triangle" << endl; //output
+        cout << "triangle = False" << endl; // not a triangle
     }
 }
